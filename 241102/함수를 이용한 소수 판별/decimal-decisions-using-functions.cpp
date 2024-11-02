@@ -12,6 +12,7 @@ bool Find_(int n){
 
 int Answer_Sum(int n, int m){
     int sum = 0;
+    if(n == 0) sum = -1;
     for(int i = n; i<=m; i++){
         if(Find_(i) == true){
             sum += i;
