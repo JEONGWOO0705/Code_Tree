@@ -1,26 +1,36 @@
 #include <iostream>
 #include <algorithm>
 #include <functional>
+
 using namespace std;
 
-#define MAX 45
-int array[MAX];
+#define MAX_N 100
+
+int nums[MAX_N];
+
 int main() {
-    // 여기에 코드를 작성해주세요.
- 
-    int n;
-    cin >> n;
-    for(int i = 0; i<n;i++){
-        cin>>array[i];
-    }
-    sort(array,array+n);
-    for(int i= 0; i<n;i++){
-        cout<<array[i]<<" ";
-    }
-    cout<<endl;
-    sort(array,array+n,greater<int>());
-    for(int i= 0; i<n;i++){
-        cout<<array[i]<<" ";
-    }
-    return 0;
+	// 변수 선언
+	int n;
+	
+	// 입력
+	cin >> n;
+	
+	for(int i = 0; i < n; i++)
+		cin >> nums[i];
+	
+	// 오름차순 정렬
+	sort(nums, nums + n);
+	
+	for(int i = 0; i < n; i++)
+		cout << nums[i] << " ";
+	cout << endl;
+	
+	// 내림차순 정렬
+	sort(nums, nums + n, greater<int>());
+	
+	for(int i = 0; i < n; i++)
+		cout << nums[i] << " ";
+	cout << endl;
+	
+	return 0;
 }
