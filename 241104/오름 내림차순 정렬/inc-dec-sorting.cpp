@@ -3,11 +3,11 @@
 #include <functional>
 using namespace std;
 
-
+#define MAX 45
 
 int main() {
     // 여기에 코드를 작성해주세요.
-    int array[40];
+    int array[MAX];
     int n;
     cin >> n;
     for(int i = 0; i<n;i++){
