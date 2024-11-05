@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    vector<int> Array(n); // n 크기의 벡터 선언
+    int Array[n];
     for (int i = 0; i < n; i++) {
         cin >> Array[i];
     }
