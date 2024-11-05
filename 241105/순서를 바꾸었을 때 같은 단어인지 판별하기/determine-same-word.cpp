@@ -12,7 +12,7 @@ int main() {
     for(int i = 0 ; i<first.length(); i++){
         if(first[i] == second[i]) cnt++;
     }
-    if(cnt>= 2) cout<<"Yes";
+    if(cnt == first.length()) cout<<"Yes";
     else cout <<"NO";
     // 여기에 코드를 작성해주세요.
     return 0;
