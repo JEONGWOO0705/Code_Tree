@@ -19,9 +19,6 @@ int main() {
             cnt++;
         }
     }
-    if (cnt == 1) {
-        cnt = 0;
-    }
     cout << cnt;
     return 0;
 }
