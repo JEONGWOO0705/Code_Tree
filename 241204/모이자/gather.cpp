@@ -1,12 +1,13 @@
 #include <iostream>
 #include <cmath>
+#include <climits>
 using namespace std;
 #define MAXNUM 40
 int main() {
     // 여기에 코드를 작성해주세요.
     int n;
     int people[MAXNUM];
-    int minroot = 5000;
+    int minroot = INT_MAX;
     cin >> n;
     for (int i = 0; i < n; i++) {
         int inp;
